@@ -1,9 +1,9 @@
 <div class="col-6 mx-auto">
   <% @posts.each do |post| %>
-    <div class="card mb-5">
-      <div class="card-text">
-        <p><%= truncate(post.title, length: 100) %></p>
-      </div>
+    <%# <div class="card mb-5">
+      <div class="card-text"> %>
+        <%# <p><%= truncate(post.title, length: 100) %>
+      <%# </div> %>
       <div class="card-text">
         <p><%= truncate(post.caption, length: 2000) %></p>
       </div>
