@@ -1,0 +1,27 @@
+<div class="col-lg-8 mx-auto">
+  <div class="card mb-3">
+    <div class="row no-gutters">
+      <div class="col-lg-5">
+        <div class="card-body scroll">
+          <%= simple_format (@post.caption) %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<%# <h1>投稿詳細</h1>
+<p>
+  <b>タイトル:<%= @post.title</b>
+</p>
+
+<p>
+  <b><%= @post.body</b>
+</p> %>
+
+<%# <%= link_to "一覧へ戻る", posts_path %>
+
+<%# <p> %>
+  <%# <%= link_to "編集", edit_post_path(@post) %>
+  <%# <%= link_to "削除", post_path(@post), method: :delete, data: {confirm: '削除してよろしいですか？'} %>
+<%# </p> %>
