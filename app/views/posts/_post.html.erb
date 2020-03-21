@@ -1,4 +1,5 @@
 <div class="card mb-5">
+
   <%= link_to post do %>
   <% end %>
   <div class="card-text">
@@ -8,7 +9,7 @@
 
     <p>
       <%= link_to "編集", edit_post_path(post), class: "btn btn-xs btn-success" %>
-      <%= button_tag "削除", class: "btn btn-xs btn-default", data: { toggle: "modal", target: "#delete-post" } %>
+      <%= link_to "削除", post_path(post), method: :delete, class: "btn-default" %>
     </p>
 </div>
 
