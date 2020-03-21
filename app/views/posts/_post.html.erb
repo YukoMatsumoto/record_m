@@ -2,6 +2,9 @@
   <%= link_to post do %>
   <% end %>
   <div class="card-text">
+    <p><%= truncate(post.title, length: 100) %>
     <p><%= truncate(post.caption, length: 2000) %></p>
   </div>
 </div>
+
+
