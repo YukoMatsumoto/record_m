@@ -1,11 +1,11 @@
   ja:
     devise:
-    registrations:
-      new:
-        log_in: ログイン
-        minimum_password_length: "%{length} 文字以上を入力して下さい"
-        sign_up: アカウント登録
-        title: Sign Up
+      registrations:
+        new:
+          log_in: ログイン
+          minimum_password_length: "%{length} 文字以上を入力して下さい"
+          sign_up: アカウント登録
+          title: Sign Up
       sessions:
         new:
           log_in: ログイン

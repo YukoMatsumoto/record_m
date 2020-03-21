@@ -5,6 +5,9 @@ ja:
         email: メールアドレス
         password: パスワード
         avatar: 画像
+        description: 自己紹介
+        name: 名前
+        username: ユーザー名
     errors:
       messages:
         record_invalid: 'バリデーションに失敗しました: %{errors}'
