@@ -19,7 +19,7 @@ class PostsController < ApplicationController
   end
 
   def edit
-    @post = Post.find(params[:id])
+    # @post = Post.find(params[:id])
   end
 
   def update
@@ -38,7 +38,7 @@ class PostsController < ApplicationController
   private
 
   def post_params # ストロングパラメータを定義する
-    params.require(:post).permit(:caption)
+    params.require(:post).permit(:title ,:caption)
   end
 
   def set_post
