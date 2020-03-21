@@ -5,6 +5,11 @@
     <p><%= truncate(post.title, length: 100) %>
     <p><%= truncate(post.caption, length: 2000) %></p>
   </div>
+
+    <p>
+      <%= link_to "編集", edit_post_path(post), class: "btn btn-xs btn-success" %>
+      <%= button_tag "削除", class: "btn btn-xs btn-default", data: { toggle: "modal", target: "#delete-post" } %>
+    </p>
 </div>
 
 
