@@ -16,7 +16,7 @@ class PostsController < ApplicationController
     redirect_to @post, notice: '投稿を保存しました'
   end
 
-  def show  
+  def show
   end
 
   def edit

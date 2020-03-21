@@ -49,6 +49,7 @@ test:
 #
 production:
   <<: *default
-  database: record_m_production
+  # database: record_m_production
+  adapter: postgresql
   username: record_m
   password: <%= ENV['RECORD_M_DATABASE_PASSWORD'] %>
