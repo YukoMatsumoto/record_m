@@ -13,9 +13,9 @@ default: &default
   adapter: mysql2
   encoding: utf8mb4
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  username: root
-  password:
-  host: localhost
+  username: <%= Rails.application.credentials.database[:user_name] %>
+  password: <%= Rails.application.credentials.database[:user_pass] %>
+  host: db
 
 development:
   <<: *default
@@ -49,6 +49,7 @@ test:
 #
 production:
   <<: *default
-  database: record_m_production
+  # database: record_m_production
+  adapter: postgresql
   username: record_m
   password: <%= ENV['RECORD_M_DATABASE_PASSWORD'] %>

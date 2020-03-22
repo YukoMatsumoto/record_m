@@ -1,0 +1,12 @@
+@import '~bootstrap/scss/bootstrap';
+@import "~@fortawesome/fontawesome-free/scss/fontawesome";
+
+.logo {
+  font-family: 'Fontrust', cursive;
+  font-size: 2rem;
+}
+
+nav a {
+  color: rgb(231, 242, 242);
+  text-decoration: none;
+}

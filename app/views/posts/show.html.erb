@@ -1,0 +1,42 @@
+<%# 一覧 %>
+<div class="col-lg-12 mx-auto">
+  <div class="card mb-3">
+    <div class="row no-gutters">
+
+      <div class="col-lg-12">
+        <div class="card-body">
+          <% if @post.user.avatar.attached? %>
+            <%= image_tag @post.user.avatar.variant(resize_to_fill: [32, 32]).processed, class: "img-thumbnail rounded-circle" %>
+          <% else %>
+            <%= image_tag "no_image", class: "img-thumbnail rounded-circle" %>
+          <% end %>
+          <%= @post.user.name %>
+          <hr>
+          <div class="scroll">
+          <%= @post.title %>
+            <%= simple_format (@post.caption) %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <p>
+      <%= link_to "編集", edit_post_path(@post), class: "btn btn-block btn-primary" %>
+    </p>
+    <p>
+      <%= button_tag "削除", class: "btn btn-block btn-warning", data: { toggle: "modal", target: "#delete-post" } %>
+    </p>
+</div>
+
+  <%= render "delete_modal" , post: @post %>
+
+<%# <h1>投稿詳細</h1>
+<p>
+  <b>タイトル:<%= @post.title</b>
+</p>
+
+<p>
+  <b><%= @post.body</b>
+</p> %>
+
+
